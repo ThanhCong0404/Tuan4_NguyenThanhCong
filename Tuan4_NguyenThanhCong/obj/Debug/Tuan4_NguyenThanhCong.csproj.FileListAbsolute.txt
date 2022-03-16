@@ -28,7 +28,6 @@ C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\Newtonsof
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\Antlr3.Runtime.pdb
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\obj\Debug\Tuan4_NguyenThanhCong.csproj.CoreCompileInputs.cache
-C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\obj\Debug\Tuan4_NguyenThanhCong.csproj.CopyComplete
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\obj\Debug\Tuan4_NguyenThanhCong.dll
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\obj\Debug\Tuan4_NguyenThanhCong.pdb
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\roslyn\csc.exe
@@ -80,3 +79,4 @@ C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\roslyn\vb
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\roslyn\vbc.rsp
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\roslyn\VBCSCompiler.exe
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\obj\Debug\Tuan4_NguyenThanhCong.csproj.AssemblyReference.cache

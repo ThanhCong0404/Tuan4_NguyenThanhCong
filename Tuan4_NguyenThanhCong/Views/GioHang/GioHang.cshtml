@@ -8,7 +8,7 @@
 
 @if (ViewBag.Message != null)
 {
-<div class="alert alert-@ViewBag.AlertStatus">@ViewBag.Message</div>
+    <div class="alert alert-@ViewBag.AlertStatus">@ViewBag.Message</div>
 }
 
 <table class="table table-bordered">
@@ -22,38 +22,38 @@
     </tr>
     @foreach (var item in Model)
     {
-    <tr class="align-middle text-center">
-        <td>@item.tensach</td>
-        <td><img class="img-fluid" src="@item.hinh" style="width: 100px" /></td>
-        <td>@String.Format("{0:0,0}", item.giaban) đ</td>
-        @using (Html.BeginForm("CapNhatGioHang", "GioHang", new { @id = item.masach}))
+        <tr class="align-middle text-center">
+            <td>@item.tensach</td>
+            <td><img class="img-fluid" src="@item.hinh" style="width: 100px" /></td>
+            <td>@String.Format("{0:0,0}", item.giaban) đ</td>
+            @using (Html.BeginForm("CapNhatGioHang", "GioHang", new { @id = item.masach }))
             {
-        <input type="hidden" value="@item.masach" name="id" />
-        <input type="hidden" value="@item.iSoluong" id="soluongton" />
+                <input type="hidden" value="@item.masach" name="id" />
+                <input type="hidden" value="@item.iSoluong" id="soluongton" />
 
-        <td><input style="width: 80px; margin: 0 auto" class="form-control" value="@item.iSoluong" name="txtSoLg" type="number" min="1" /></td>
-        <td>@item.dThanhtien.ToString("#,###") đ</td>
-        <td class="text-center">
-            <button data-id="@item.masach" type="submit" id="btn-submit" class="btn btn-warning btn-sm"><i class="fa-solid fa-wrench"></i></button>
-            <a href="@Url.Action("XoaGioHang", "GioHang", new { id = item.masach})" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a>
-        </td>
+                <td><input style="width: 80px; margin: 0 auto" class="form-control" value="@item.iSoluong" name="txtSoLg" type="number" min="1" /></td>
+                <td>@item.dThanhtien.ToString("#,###") đ</td>
+                <td class="text-center">
+                    <button data-id="@item.masach" type="submit" id="btn-submit">Cập nhật<i class="fa-solid fa-wrench"></i></button>
+                    <a href="@Url.Action("XoaGioHang", "GioHang", new { id = item.masach})">  Xóa  <i class="fa-solid fa-trash"></i></a>
+                </td>
             }
-    </tr>
+        </tr>
     }
     @if (Model.Count() > 0)
     {
-    <tr style="font-weight: bold" class="text-end">
-        <td colspan="2">Số loại sách: @ViewBag.TongSoLuongSanPham</td>
-        <td colspan="2">Số loại sách: @ViewBag.TongSoLuong</td>
-        <td colspan="2">Số loại sách: @String.Format("{0:0,0}", ViewBag.TongTien) đ</td>
-    </tr>
+        <tr style="font-weight: bold" class="text-end">
+            <td colspan="2">Số loại sách: @ViewBag.TongSoLuongSanPham</td>
+            <td colspan="2">Số loại sách: @ViewBag.TongSoLuong</td>
+            <td colspan="2">Số loại sách: @String.Format("{0:0,0}", ViewBag.TongTien) đ</td>
+        </tr>
     }
 
 </table>
 
-<a class="btn btn-primary" href="@Url.Action("Index", "Home")">Tiếp tục mua sắm</a>
+<a class="btn btn-primary" href="@Url.Action("Index", "Home")">Trở về trang mua sắm</a>
 @if (Model.Count() > 0)
 {
-<a href="@Url.Action("XoaTatCaGioHang", "GioHang")" class="btn btn-danger">Xóa Giỏ Hàng</a>
-<a href="@Url.Action("DatHang", "GioHang")" class="btn btn-success">Đặt Hàng</a>
+    <a href="@Url.Action("XoaTatCaGioHang", "GioHang")" class="btn btn-danger">Xóa Giỏ Hàng</a>
+    <a href="@Url.Action("DatHang", "GioHang")" class="btn btn-success">Đặt Hàng</a>
 }

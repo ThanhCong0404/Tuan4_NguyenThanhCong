@@ -80,6 +80,8 @@ namespace Tuan4_NguyenThanhCong.Controllers
             ViewBag.Tongsoluong = TongSoLuong();
             ViewBag.Tongtien = TongTien();
             ViewBag.Tongsoluongsanpham = TongSoLuongSanPham();
+            ViewBag.Message = Session["Message"];
+            ViewBag.AlertStatus = Session["AlertStatus"];
             return View(lstGiohang);
         }
 
@@ -106,7 +108,7 @@ namespace Tuan4_NguyenThanhCong.Controllers
         public ActionResult CapNhatGioHang(int id , FormCollection collection )
         {
             List<GioHang> lstGioHang = Laygiohang();
-            GioHang sanpham = lstGioHang.SingleOrDefault(n => n.masach == id);
+            GioHang sanpham = lstGioHang.FirstOrDefault(n => n.masach == id);
             if (sanpham != null)
             {
                 //sanpham.iSoluong = int.Parse(collection["txtSolg"].ToString());
