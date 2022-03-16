@@ -137,17 +137,16 @@ namespace Tuan4_NguyenThanhCong.Controllers
         public ActionResult DatHang()
         {
             List<GioHang> list = Laygiohang();
-            foreach(var item in list)
+            foreach (var item in list)
             {
                 var sach = data.Saches.FirstOrDefault(m => m.masach == item.masach);
-                sach.soluongton = item.iSoluong;
+                sach.soluongton -= item.iSoluong;
             }
             data.SubmitChanges();
             Session["Message"] = "Đặt hàng thành công";
-            Session["AlertStatus"] = "Success";
+            Session["AlertStatus"] = "success";
             list.Clear();
             return RedirectToAction("GioHang");
-
         }
 
 
