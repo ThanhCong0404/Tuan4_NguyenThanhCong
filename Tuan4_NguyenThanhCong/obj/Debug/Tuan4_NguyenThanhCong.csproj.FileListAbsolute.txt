@@ -79,4 +79,4 @@ C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\roslyn\vb
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\roslyn\vbc.rsp
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\roslyn\VBCSCompiler.exe
 C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\obj\Debug\Tuan4_NguyenThanhCong.csproj.AssemblyReference.cache
+C:\Users\thanh\Desktop\Tuan4_NguyenThanhCong\Tuan4_NguyenThanhCong\obj\Debug\Tuan4_NguyenThanhCong.csproj.CopyComplete
